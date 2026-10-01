@@ -38,9 +38,9 @@ export default function Docs() {
               </p>
 
               <div className="space-y-2 text-sm text-neutral-400">
-                <a className="block hover:text-white" href="#">
-                  Variáveis
-                </a>
+                <a className="block hover:text-white" href="/docs/variaveis">
+  Variáveis
+</a>
                 <a className="block hover:text-white" href="#">
                   Condições
                 </a>
