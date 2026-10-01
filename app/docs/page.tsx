@@ -104,7 +104,7 @@ export default function Docs() {
           </p>
 
           <pre className="mt-5 overflow-x-auto rounded-xl border border-white/[0.07] bg-[#0d0d0d] p-5 text-sm leading-7 text-neutral-300">
-            <code>{`local Sun = loadstring(game:HttpGet("SEU_LINK_RAW"))()`}</code>
+            <code>{`local Sun = loadstring(game:HttpGet("https://raw.githubusercontent.com/blackzww/Sun/refs/heads/main/sun.lua"))()`}</code>
           </pre>
 
           <h2 className="mt-12 text-2xl font-semibold">
