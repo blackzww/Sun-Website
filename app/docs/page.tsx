@@ -13,7 +13,7 @@ export default function Docs() {
       <div className="mx-auto flex max-w-7xl">
 
         {/* SIDEBAR */}
-        <aside className="sticky top-0 hidden h-screen w-72 shrink-0 border-r border-white/[0.06] px-6 py-8 md:block">
+        <aside className="sticky top-0 hidden h-screen w-72 shrink-0 overflow-y-auto border-r border-white/[0.06] px-6 py-8 md:block">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/sun.png"
@@ -86,25 +86,40 @@ export default function Docs() {
                   Loops
                 </Link>
 
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/funcoes"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Funções
-                </span>
+                </Link>
 
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/listas"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Listas
-                </span>
+                </Link>
 
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/objetos"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Objetos
-                </span>
+                </Link>
 
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/texto"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Texto
-                </span>
+                </Link>
 
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/comentarios"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Comentários
-                </span>
+                </Link>
               </div>
             </div>
 
@@ -115,21 +130,33 @@ export default function Docs() {
               </p>
 
               <div className="space-y-1 text-sm">
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/roblox"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Introdução
-                </span>
+                </Link>
 
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/roblox/jogador"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Jogador
-                </span>
+                </Link>
 
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/roblox/eventos"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Eventos
-                </span>
+                </Link>
 
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/roblox/apis-luau"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   APIs Luau
-                </span>
+                </Link>
               </div>
             </div>
 
@@ -140,16 +167,33 @@ export default function Docs() {
               </p>
 
               <div className="space-y-1 text-sm">
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/bibliotecas"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Bibliotecas
-                </span>
+                </Link>
 
-                <span className="block px-3 py-2 text-neutral-600">
+                <Link
+                  href="/docs/debug"
+                  className="block rounded-lg px-3 py-2 text-neutral-400 transition hover:bg-white/[0.03] hover:text-white"
+                >
                   Debug
-                </span>
+                </Link>
               </div>
             </div>
           </nav>
+
+          <div className="mt-10 border-t border-white/[0.06] pt-6">
+            <a
+              href="https://github.com/blackzww/Sun"
+              target="_blank"
+              rel="noreferrer"
+              className="block rounded-lg px-3 py-2 text-sm text-neutral-500 transition hover:bg-white/[0.03] hover:text-white"
+            >
+              GitHub ↗
+            </a>
+          </div>
         </aside>
 
         {/* CONTEÚDO */}
@@ -168,6 +212,7 @@ export default function Docs() {
                   width={30}
                   height={30}
                 />
+
                 Sun
               </Link>
 
@@ -309,6 +354,70 @@ senao
 fim`}</code>
             </pre>
 
+            {/* DOCUMENTAÇÃO */}
+            <h2 className="mt-14 text-2xl font-semibold tracking-tight">
+              Explore a documentação
+            </h2>
+
+            <p className="mt-4 leading-7 text-neutral-400">
+              A documentação está dividida entre os fundamentos da linguagem,
+              integração com Roblox e recursos avançados.
+            </p>
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <Link
+                href="/docs/instalacao"
+                className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-5 transition hover:border-yellow-300/20 hover:bg-yellow-300/[0.03]"
+              >
+                <p className="font-medium">
+                  Começando
+                </p>
+
+                <p className="mt-2 text-sm leading-6 text-neutral-500">
+                  Instalação e primeiros passos com a Sun.
+                </p>
+              </Link>
+
+              <Link
+                href="/docs/variaveis"
+                className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-5 transition hover:border-yellow-300/20 hover:bg-yellow-300/[0.03]"
+              >
+                <p className="font-medium">
+                  Linguagem
+                </p>
+
+                <p className="mt-2 text-sm leading-6 text-neutral-500">
+                  Variáveis, condições, loops, funções e mais.
+                </p>
+              </Link>
+
+              <Link
+                href="/docs/roblox"
+                className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-5 transition hover:border-yellow-300/20 hover:bg-yellow-300/[0.03]"
+              >
+                <p className="font-medium">
+                  Roblox
+                </p>
+
+                <p className="mt-2 text-sm leading-6 text-neutral-500">
+                  Jogador, eventos e compatibilidade com APIs Luau.
+                </p>
+              </Link>
+
+              <Link
+                href="/docs/bibliotecas"
+                className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-5 transition hover:border-yellow-300/20 hover:bg-yellow-300/[0.03]"
+              >
+                <p className="font-medium">
+                  Avançado
+                </p>
+
+                <p className="mt-2 text-sm leading-6 text-neutral-500">
+                  Bibliotecas externas, compatibilidade e debug.
+                </p>
+              </Link>
+            </div>
+
             {/* OPEN SOURCE */}
             <h2 className="mt-14 text-2xl font-semibold tracking-tight">
               Feita para ser modificada
@@ -360,6 +469,7 @@ fim`}</code>
                 </span>
               </Link>
             </div>
+
           </div>
         </article>
       </div>
